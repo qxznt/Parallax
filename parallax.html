@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Sahil</a>
+        <ul>
+            <li><a href="https://qxznt.github.io/portfolio/portfolio.html" target=”__blank”>Home</a></li>
+            <li><a href="https://www.linkedin.com/in/sahil-08957a236/" target="blank">Contact</a></li>
+            <li><a href="https://github.com/qxznt" target=”_blank”>Github</a></li>
+            <li><a href="https://open.spotify.com/user/31jomf7cwbpwwfnoxoewdf5hmi7u?si=b20dcacd70b64c29" target="___blank">Spotify</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Web Developer</h2>
+        <a href="#sec" id="btn">EXplore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>A web-Based App Developer</h2>
+        <p>Passionate and driven computer science student with a strong foundation in programming and problem-solving. Currently pursuing a Btech Degree in Computer Science and Engineering at SRM Institute of Science and Technology , specializing in Web Development. Eager to apply my knowledge and skills to contribute to innovative software solutions and make a positive impact in the tech industry.Experienced in web development using HTML, CSS, and JavaScript Knowledgeable in data structures, algorithms, and database management Familiar with software development methodologies and version control systems Strong problem-solving abilities and a keen attention to detail Excellent communication and teamwork skills.<br><br>Step into the world of my Web and App Development Studio, where passion meets proficiency in crafting remarkable digital experiences. As a seasoned web and app developer with a diverse background, I have traversed various projects, honing my skills to perfection. My journey includes a transformative internship with the prestigious Accenture, where I immersed myself in the industry's best practices and cutting-edge technologies. <br><br> From the moment you entrust your vision to me, you'll witness the fusion of art and technology, resulting in websites and Android apps that are more than just functional – they're engaging, seamless, and delightful. My extensive experience in creating responsive and captivating websites ensures that your online presence will not only stand out but also resonate with your target audience. When it comes to Android apps, my expertise shines through in developing feature-rich applications that harmoniously blend aesthetics and performance. From the initial wireframe to the final product, every step is executed with meticulous attention to detail and a user-centric approach.</p>
+    
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.margintop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.Top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
